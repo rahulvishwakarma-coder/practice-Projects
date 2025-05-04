@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.message{
+    font-size: 1.6rem;
+    font-weight: 800;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top:10rem ;
+    flex-direction: column;
+    gap: 2rem;
+}
+.selection{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.moves{
+    display: flex;
+    font-size: 3rem;
+    gap: 1rem;
+    padding: 1rem;
+}
+.move{
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    transition-delay: 50ms;
+}
+.move:hover{
+    transform: scale(1.03);
+    cursor: pointer;
+    opacity: 80%;
+}
+.moves :nth-child(1){
+    background-color: #ff0000;
+}
+.moves :nth-child(2){
+    background-color: #2196f3;
+}
+.moves :nth-child(3){
+    background-color:  #4caf50;
+}
+.score{
+    display: flex;
+    gap: 0.5rem;
+    font-size: 1.6rem;
+}
+.score :nth-child(1){
+    color: #2196f3;
+}
+.score :nth-child(2){
+    color: #ff0000;
+}
